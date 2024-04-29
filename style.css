@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 2px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1,
+header span {
+    padding: 0;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 50px;
+    word-spacing: -15px;
+    letter-spacing: -2px;
+    font-weight: 500;
+
+}
+
+header span {
+    position: absolute;
+    font-size: 14px;
+    top: 55px;
+    left: 10px;
+}
+
+header #nav {
+    gap: 0;
+    margin: 20px 0 30px 0;
+}
+
+a {
+    font-weight: 400;
+    font-style: none;
+    color: black;
+    text-decoration-color: black;
+}
+
+h2 {
+    font-family: "Old Standard TT", serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -px;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    padding: 0;
+    margin: 0;
+}
+
+#profile {}
+
+#info {
+    max-width: 96vw;
+    font-size: 15px;
+    line-height: 1.6;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    word-wrap: break-word;
+}
+
+#profile #info p {
+    margin: 15px 0;
+}
+
+#profile img {
+    width: 96vw;
+}
+
+#contact {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#secWorks {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#secWorks h3 {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.works {
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.works span {
+    font-size: 14px;
+    position: absolute;
+    left: 2%;
+    top: 96%;
+}
+
+.works img {
+    width: 96vw;
+    height: 30vh;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 915px) and (orientation: landscape) {
+    header {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        margin-top: 8vh;
+        gap: 20px;
+    }
+
+    #profile img {
+        width: 30vw;
+        object-fit: cover;
+    }
+
+    #info {
+        max-width: 50vw;
+    }
+
+    #contact {
+        margin: 20vh 0;
+    }
+
+    .works span {
+        left: 0;
+    }
+
+    .works img {
+        width: 60vw;
+        height: 70vh;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        margin-top: 8vh;
+        gap: 20px;
+    }
+
+    #profile img {
+        width: 30vw;
+        object-fit: cover;
+    }
+
+    #info {
+        max-width: 50vw;
+    }
+
+    #contact {
+        margin: 10vh 0;
+    }
+
+    .works span {
+        left: 0;
+    }
+
+    .works img {
+        width: 60vw;
+        height: 300px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+    #container {
+        width: 100vw;
+        display: flex;
+        margin: 80px 0 150px 0;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: 20px;
+        width: 70vw
+    }
+    #info p{
+        font-size: 25px;
+        width: 800px;
+
+    }
+
+    #profile img {
+        width: 400px;
+        object-fit: cover;
+    }
+
+   #profile, #contact {
+        margin-top: 10vh;
+    
+    }
+
+    #secWorks {
+        flex-basis: 100%;
+    }
+
+    #secWorks #workElement {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .works span {
+        left: 0;
+    }
+
+    .works img {
+        width: 30vw;
+        height: 30vh;
+        object-fit: cover;
+        box-sizing: border-box;
+
+    }
+}
